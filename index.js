@@ -3,6 +3,7 @@ const fs = require("fs")
 const prompt = require("prompt-sync")()
 const downloadBeatmap = async (urls) => {
 	console.log("downloading beatmaps ...")
+	if (!(fs.existsSync("./beatmaps"))) fs.mkdirSync("./beatmaps")
 	for (let i = 0; i < urls.length; i++) {
 		console.log("downloading "+urls[i])
 		const beatmap = await fetch("https://beatconnect.io/b/"+urls[i]+"", {
@@ -23,6 +24,7 @@ const downloadBeatmap = async (urls) => {
 			"method": "GET"
 		});
 		console.log(beatmap.status)
+		if (!(fs.existsSync("./beatmaps"))) fs.mkdirSync("./beatmaps")
 		const beatmapFile = fs.createWriteStream(`./beatmaps/${urls[i]}.osz`)
 		beatmap.body.pipe(beatmapFile)
 	}

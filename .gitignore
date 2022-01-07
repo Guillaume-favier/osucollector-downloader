@@ -1,0 +1,4 @@
+﻿./node-modules
+node-modules
+node_modules/*
+.node_modules/*
