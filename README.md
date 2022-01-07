@@ -12,4 +12,8 @@ node index.js
 
 After that a prompt will ask you to enter a collection id
 
+![](https://github.com/Guillaume-favier/osucollector-downloader/raw/main/images/1.png)
+
 You just have to look at the number at the end of the url of collection on osu!Collector
+
+![](https://github.com/Guillaume-favier/osucollector-downloader/raw/main/images/2.png)
