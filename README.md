@@ -1,5 +1,5 @@
 # osucollector-downloader
-automatic downloader for osu!Collector
+automatic downloader for osu!Collector using their api
 
 ## Quick start
 
